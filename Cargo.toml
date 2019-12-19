@@ -1,0 +1,10 @@
+[package]
+name = "rtsp-camera-mock"
+version = "0.1.0"
+authors = ["Valmir Pretto <valmir.pretto@deepx.it>"]
+edition = "2018"
+
+[dependencies]
+glib = { version = "0.9.0", git = "https://github.com/gtk-rs/glib" }
+gstreamer = { version = "0.15.0", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
+gstreamer-rtsp-server = { version = "0.15.0", git = "https://gitlab.freedesktop.org/gstreamer/gstreamer-rs" }
