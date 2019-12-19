@@ -9,7 +9,7 @@ fn main() {
   gstreamer::init().unwrap();
 
   let media_factory = RTSPMediaFactory::new();
-  media_factory.set_launch("videotestsrc ! x264enc ! rtph264pay name=pay0 pt=96");
+  media_factory.set_launch("videotestsrc ! x264enc key-int-max=40 ! rtph264pay name=pay0 pt=96");
   media_factory.set_shared(true);
 
   let main_context = MainContext::default();
